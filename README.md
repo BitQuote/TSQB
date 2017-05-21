@@ -19,11 +19,11 @@
  - ESLint rules: [Airbnb](https://github.com/airbnb/javascript)
  - RethinkDB driver: official
  - Ticket document fields:
-  - `id` (rethink key)
-  - `message_id` (snowflake)
-  - `user_id` (snowflake)
-  - `timestamp`
-  - `description` (text)
+   - `id` (rethink key)
+   - `message_id` (snowflake)
+   - `user_id` (snowflake)
+   - `timestamp`
+   - `description` (text)
  - Bot messages in *strings.json*
 
 ## Misc
