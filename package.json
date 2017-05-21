@@ -1,0 +1,29 @@
+{
+  "name": "tech-support-queue-bot",
+  "version": "0.0.1",
+  "description": "A simple Discord bot to manage support tickets",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "keywords": [
+    "discord",
+    "support",
+    "queue",
+    "bot"
+  ],
+  "author": "BitQuote",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "discord.js": "^11.1.0",
+    "moment": "^2.18.1",
+    "require-dir": "^0.3.1",
+    "rethinkdbdash": "^2.3.28",
+    "string-format": "^0.5.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^15.0.1"
+  }
+}

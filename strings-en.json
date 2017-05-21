@@ -1,0 +1,74 @@
+{
+	"pm": "Hey there! 😀 Add me to a server to get started: <{}> 👈",
+	"ticket": "🔖 **ID:** `{0}`\n👤 **User:** {1}\n⏳ **Created:** {2}\n💬 **Description:**```{3}```",
+	"commands": {
+		"about": {
+			"description": "Tells you about this bot",
+			"responses": {
+				"default": "__TSQB__ (**T**ech **S**upport **Q**ueue **B**ot) is a simple robot built by BitQuote to manage user-created tickets for community support on Discord servers."
+			}
+		},
+		"add": {
+			"description": "Opens a new user support ticket",
+			"usage": "<description>",
+			"responses": {
+				"args_error": "Include a brief description of what you need help with please. ☝️",
+				"db_error": "Uh-oh. 😳 Something went wrong. Try again later.",
+				"success": "📨 Opened a support ticket. ID: `{}`"
+			}
+		},
+		"done": {
+			"description": "Removes a ticket after it has been addressed",
+			"usage": "<ticket ID>",
+			"responses": {
+				"args_error": "Please provide the ticket's ID. 🏷 It was shown when the ticket was created and should be available in the log channel.",
+				"id_error": "🤔 I couldn't find a ticket with that ID. Check again.",
+				"db_error": "An error occurred. 😩 I'm sorry.",
+				"success": "✅ All done with that!"
+			}
+		},
+		"help": {
+			"description": "How to use TSQB",
+			"responses": {
+				"heading": "__Command Help__\n",
+				"error": "That command doesn't exist. ☹️"
+			}
+		},
+		"ping": {
+			"description": "Is the bot alive?",
+			"responses": {
+				"default": "👋 TSQB is alive, running for {0}. 🤖 On {1} servers."
+			}
+		},
+		"set": {
+			"description": "Edits server config (mod-only)",
+			"usage": "<'log_channel' or 'mod_role'> <ID>",
+			"responses": {
+				"args": {
+					"log_channel": [
+						"log_channel",
+						"ticket log channel"
+					],
+					"mod_role": [
+						"mod_role",
+						"moderator role"
+					]
+				},
+				"args_error": "Please tell me what you want to set (`log_channel` or `mod_role`) and the ID of the channel/role you want to use. 🚦 You can get that info from 'Copy ID' in Discord's developer mode context menu.",
+				"id_error": "🙅 That ID isn't valid for a {}.",
+				"db_error": "I tried, but it didn't work. 😦 Contact the bot maintainer.",
+				"success": "👍 Alright, set the `{0}` to **{1}**"
+			}
+		},
+		"ticket": {
+			"description": "Shows the status of ticket(s)",
+			"usage": "[<'list' or ID>]",
+			"responses": {
+				"id_error": "🤔 I couldn't find a ticket with that ID. Check again.",
+				"db_error": "🛑 I'm not working right now.",
+				"default": "There are currently **{}** tickets in the queue. 🗄",
+				"log_channel": "A full list is available in {}. 🙂"
+			}
+		}
+	}
+}
